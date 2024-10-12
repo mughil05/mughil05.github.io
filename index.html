@@ -18,10 +18,30 @@
             padding: 1em;
         }
         section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
             margin: 2em;
         }
         .project {
+            width: 30%;
+            background-color: #fff;
+            padding: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 1.5em;
+            border-radius: 8px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #2980b9;
         }
         footer {
             text-align: center;
@@ -39,17 +59,6 @@
     </header>
 
     <section>
-        <h2>About Me</h2>
-        <p>I am a second-year Computer Science student at Georgia State University, specializing in artificial intelligence and data science. I enjoy solving complex problems through machine learning and predictive analytics, with a focus on applying these technologies to real-world use cases.</p>
-
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, JavaScript</li>
-            <li>Data Analysis: Pandas, Numpy, Matplotlib</li>
-            <li>Machine Learning: TensorFlow, Scikit-learn</li>
-            <li>Algorithms and Data Structures</li>
-        </ul>
-        
         <h2>Projects</h2>
 
         <div class="project">
@@ -60,7 +69,9 @@
     </section>
 
     <footer>
-        <p>Created by <a href="https://github.com/your-username">Mughil Vinayagam</a></p>
+        <p>Created by <a href="https://github.com/mughil05">Mughil Vinayagam</a> | 
+           <a href="https://linkedin.com/in/mughil-vinayagam">LinkedIn</a>
+        </p>
     </footer>
 
 </body>
